@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Логотип магазина мороженного "Gllasy"">
+          <img src="http://placehold.it/150x100" width="154" height="64" alt="Логотип магазина мороженного 'Gllasy'">
         </a>
         <ul class="site-navigation">
           <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
@@ -17,10 +17,10 @@
         </ul>
         <ul class="user-navigation">
           <li class="search"><input type="search"></li>
-          <li class="login-link">Вход</li>
-          <li class="basket">2 товара</li>
+          <li class="login-link"><a href="#">Вход</a></li>
+          <li class="basket"><a href="#">2 товара</a></li>
         </ul>
-        <div class="opening-hours">С 10 до 20, ежедневно 8 812 450-25-25</div>
+        <div class="opening-hours"><span>С 10 до 20, ежедневно</span> <span>8 812 450-25-25</span></div>
       </nav>
     </header>
     <main class="container">
@@ -35,13 +35,17 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Сортировка:</legend>
-              <input type="text" list="sorting" name="sort">
-                <datalist id="sorting">
-                  <option value="по популярности">
-                  </datalist>
-        <fieldset class="filter">
+              <select name="sorting">
+                <option value="popular">
+                  по популярности
+                </option>
+              </select>
+          </fieldset>
+        <fieldset class="price">
             <legend>Цена: 100 руб. - 500 руб.</legend>
               <input name="price" type="range" min="100" max="500" step="10">
+        </fieldset>
+        <fieldset class="fat">
           <legend>Жирность:</legend>
             <ul>
               <li class="filter-option">
@@ -61,6 +65,8 @@
                 выше 30%
               </li>
             </ul>
+        </fieldset>
+        <fieldset class="filler">
           <legend>Наполнители:</legend>
           <ul>
             <li class="filter-option">
@@ -221,7 +227,6 @@
       <ul class="footer-nav-item">
         <li>
           <a class="provider" href="#">
-            <img src="http://placehold.it/150x100" width="" height="" alt="Для поставщиков">
             Для поставщиков
           </a>
         </li>
