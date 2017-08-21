@@ -1,0 +1,25 @@
+body {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  font-weight: normal;
+  font-family: "Roboto";
+}
+.offers-list h3 {
+  font-size: 60px;
+  line-height: 60.35px;
+  color: #ffffff;
+  font-family: "Roboto";
+}
+.features-list h4 {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+  font-family: "Roboto";
+}
+.description h5 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-family: "Roboto";
+}
