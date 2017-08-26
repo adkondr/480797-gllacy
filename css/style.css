@@ -1,25 +1,207 @@
 body {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
   font-weight: normal;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
+  background-color: #849d8f;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ffbc9e;
 }
 .offers-list h3 {
   font-size: 60px;
   line-height: 60.35px;
   color: #ffffff;
-  font-family: "Roboto";
 }
-.features-list h4 {
+.features-list {
+  list-style: none;
+}
+
+.features-list h3 {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
-  font-family: "Roboto";
 }
-.description h5 {
+.features-list span {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.rasberri {
+  background: url("../img/rasberriback.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.shoko {
+  background: url("../img/shokoback.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.catalog {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+}
+.catalog-list {
+  list-style: none;
+}
+.description h3 {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
-  font-family: "Roboto";
+}
+.description p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+.description {
+  background-image: url("../img/waffeln.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.button {
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: ;
+  border: none;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: ;
+}
+.news {
+  background-image: url("../img/strawberryback.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.news-blog {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+.news-link {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline;
+}
+.subscription {
+  background: #ffffff;
+}
+.subscription-note {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+.contacts {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+}
+.main-footer {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+
+}
+.main-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.footer-nav-item {
+  list-style: none;
+}
+.footer-nav-item a:hover,
+.footer-nav-item a:focus {
+  text-decoration: none;
+  color: #ffbc9e;
+}
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  text-decoration: none;
+  color: #ffbc9e;
+}
+.breadcrumbs a{
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ffbc9e;
+}
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+.filters fieldset {
+  border: none;
+}
+.filters legend {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.filters ul {
+  list-style: none;
+  color: #ffffff;
+}
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #323232;
+}
+
+.filter-input:disabled + label {
+  color: ;
+  opacity: 0.5;
+}
+.pagination-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.pagination-list a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
 }
