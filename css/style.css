@@ -13,6 +13,23 @@ body {
 a {
   text-decoration: none;
 }
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .main-navigation {
   font-size: 16px;
   line-height: 16px;
@@ -32,6 +49,30 @@ a {
 .user-navigation a:focus {
   color: #ffbc9e;
 }
+.slide {
+  list-style: none;
+}
+.first-slide {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+.second-slide {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+.third-slide {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
 .offers-list h3 {
   font-size: 60px;
   line-height: 60.35px;
@@ -46,18 +87,18 @@ a {
   line-height: 41px;
   color: #ffffff;
 }
-.features-list span {
+.features-list p {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
 }
 .rasberri {
-  background: url("../img/rasberriback.jpg");
+  background: url("../img/rasbback.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 .shoko {
-  background: url("../img/shokoback.jpg");
+  background: url("../img/shokback.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -81,23 +122,61 @@ a {
   color: #323232;
 }
 .description {
-  background-image: url("../img/waffeln.jpg");
+  background-image: url("../img/waff.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 .button {
-  font-size: 32px;
-  line-height: 44px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
-  background-color: ;
+  background: linear-gradient(#e74a35, #f26843);
   border: none;
+  box-shadow: 0 2px 2px #ac1000;
+  text-shadow: 0 2px 2px #a0200b;
 }
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: ;
+  background: #f26843;
+}
+.give-two {
+  font-size: 32px;
+  line-height: 44px;
+  padding: 20px 40px;
+  border-radius: 40px;
+}
+.want-jam {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 15px 20px;
+  border-radius: 40px;
+}
+.want-shoko {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 15px 20px;
+  border-radius: 40px;
+}
+.send {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 13px 20px;
+  border-radius: 40px;
+}
+.feedback {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 9px 27px;
+  border-radius: 40px;
+}
+.social {
+  list-style: none;
+}
+.social-button {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255,255,255, 0);
 }
 .news {
   background-image: url("../img/strawberryback.jpg");
@@ -116,7 +195,10 @@ a {
   text-decoration: underline;
 }
 .subscription {
-  background: #ffffff;
+  background: url("../img/postwiht.png"),
+  url("../img/post.png");
+  background-position: 0 0, 0 0;
+  background-repeat: no-repeat, no-repeat;
 }
 .subscription-note {
   font-size: 16px;
@@ -204,4 +286,31 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+}
+.site-navigation-current {
+  text-align: center;
+  vertical-align: middle;
+  width: 85px;
+  background-color: #e74a35;
+  padding: 5px 5px;
+  border-radius: 40px;
+}
+.filter-button {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 7px 30px;
+  border-radius: 40px;
+  border: 2px solid #ffffff;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background: #ffffff;
+  color: #000000;
+}
+.quick-view {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 5px 15px;
+  border-radius: 40px;
 }
