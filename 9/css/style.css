@@ -34,14 +34,11 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
-  text-decoration: underline;
-}
-.main-navigation .opening-hours span{
-  text-decoration: none;
 }
 .site-navigation,
 .user-navigation {
   list-style: none;
+  text-decoration: underline;
 }
 .site-navigation a,
 .user-navigation a {
@@ -52,6 +49,14 @@ input[type="radio"].visually-hidden {
 .user-navigation a:hover,
 .user-navigation a:focus {
   color: #ffbc9e;
+}
+.time {
+  width: 14px;
+  height: 16px;
+}
+.phone {
+  width: 22px;
+  height: 24px;
 }
 .slide {
   list-style: none;
@@ -188,7 +193,12 @@ input[type="radio"].visually-hidden {
   border-radius: 40px;
 }
 .hit-description {
+  color: #ffffff;
   text-decoration: underline;
+}
+.hit-description:hover,
+.hit-description:focus {
+  color: #ffbc9e;
 }
 .ice-cream {
   width: 400px;
@@ -243,7 +253,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255,255,255, 0);
 }
 .news {
-  background-image: url("../img/strawberryback.jpg");
+  background-image: url("../img/strawbback.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -301,7 +311,7 @@ input[type="radio"].visually-hidden {
 }
 .footer-nav-item a:hover,
 .footer-nav-item a:focus {
-  text-decoration: none;
+
   color: #ffbc9e;
 }
 .footer-copyright a:hover,
@@ -313,7 +323,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
@@ -412,10 +422,12 @@ input[type="radio"].visually-hidden {
 .pagination-item-current:active{
   color: #ffffff;
 }
-.pagination-item:hover,
-.pagination-item:focus {
-  background-color: #9db1a5;
+.pagination-item {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+}
+.pagination-item:hover,
+.pagination-item:focus {
+  background-color: #9db1a5;
 }
