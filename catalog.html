@@ -10,6 +10,8 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <div class="container">
         <a class="main-header-logo" href="index.html">
           <img src="svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина мороженного 'Gllacy'">
         </a>
@@ -24,6 +26,8 @@
           <li><a class="basket" href="#">2 товара</a></li>
         </ul>
         <div class="opening-hours"><span>С 10 до 20, ежедневно</span> <span>8 812 450-25-25</span></div>
+      </div>
+    </div>
       </nav>
     </header>
     <main class="container">
@@ -33,10 +37,13 @@
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
       <h1 class="page-title">Сливочное мороженное</h1>
-      <section class="filters">
+
+    <section class="filters">
+
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <div class="filtres-container">
+          <fieldset class="sort">
             <legend for="sort">Сортировка:</legend>
               <select id="sort" name="sorting">
                 <option value="popular">
@@ -104,8 +111,11 @@
           </ul>
         </fieldset>
         <button type="submit" class="filter-button">Применить</button>
+        </div>
       </form>
-    </section>
+
+  </section>
+
     <section class="catalog">
       <h2 class="visually-hidden">Перечень видов мороженного</h2>
         <ul class="catalog-list">
@@ -208,14 +218,15 @@
         </ul>
         <ul class="pagination-list">
             <li class="pagination-icon"></li>
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">4</a></li>
+            <li><a class="pagination-item-current">1</a></li>
+            <li><a class="pagination-item" href="#">2</a></li>
+            <li><a class="pagination-item" href="#">3</a></li>
+            <li><a class="pagination-item" href="#">4</a></li>
         </ul>
     </section>
   </main>
   <footer class="main-footer">
+    <div class="footer-container">
     <div class="footer-social">
       <ul class="social">
         <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
@@ -250,6 +261,7 @@
       <a class="copyright" href="https://htmlacademy.ru">HTML Academy</a>
       &copy 2016
     </p>
+    </div>
   </footer>
   </body>
 </html>
