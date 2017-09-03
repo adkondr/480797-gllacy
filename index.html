@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Магазин мороженного "Gllacy Shop"</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
+      <div class="container">
       <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
-          <div class="container">
+        <div class="site-navigation-container">
         <a class="main-header-logo" href="index.html">
           <img src="svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина мороженного 'Gllacy'">
         </a>
@@ -21,24 +21,28 @@
             <li><a href="payment.html">Доставка и оплата</a></li>
             <li><a href="about-us.html">О компании</a></li>
           </ul>
+        </div>
+        <div class="user-navigation-container">
           <ul class="user-navigation">
             <li><a class="search" href="#"></a></li>
             <li><a class="login-link" href="login.html">Вход</a></li>
             <li><a class="basket" href="basket.html">Пусто</a></li>
           </ul>
-          <div class="opening-hours"><span class="time">С 10 до 20, ежедневно</span> <span class="phone">8 812 450-25-25</span></div>
         </div>
-      </div>
       </nav>
+      <div class="opening-hours"><span class="time">С 10 до 20, ежедневно</span> <span class="phone">8 812 450-25-25</span></div>
+      </div>
     </header>
-    <main class="container">
+    <main>
+      <div  class="container">
       <h1 class="visually-hidden">Магазин мороженного "Gllacy"</h1>
-    <div class="offers-container">
       <section class="offers">
         <h2 class="visually-hidden">Предложения</h2>
         <figure class="offers-list">
-          <img class="ice-cream1" src="img/ice-cream1.png" width="382" height="584" alt="Крем - брюле и пломбир с малиновым джемом">
-          <img class="ice-cream2" src="img/ice-cream2.png" width="382" height="584" alt="Крем - брюле и пломбир с малиновым джемом">
+          <div class="ice-creams">
+            <img class="ice-cream1" src="img/ice-cream1.png" width="382" height="584" alt="Крем - брюле и пломбир с малиновым джемом">
+            <img class="ice-cream2" src="img/ice-cream2.png" width="382" height="584" alt="Крем - брюле и пломбир с малиновым джемом">
+          </div>
             <h3 class="creme-brulee">Крем-брюле и пломбир с малиновым джемом</h3>
               <a class="button give-two" href="#">Давайте оба!</a>
         </figure>
@@ -54,8 +58,6 @@
             </li>
           </ul>
       </section>
-    </div>
-    <div class="features-container">
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <figure class="features-list rasberri">
@@ -69,8 +71,6 @@
             <a class="button want-shoko" href="#">Хочу шоколадки!</a>
         </figure>
       </section>
-    </div>
-    <div class="catalog-container">
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog-list">
@@ -116,7 +116,6 @@
           </li>
         </ul>
       </section>
-    </div>
     <div class="description-container">
       <section class="description">
         <h2 class="visually-hidden">Описание продукции</h2>
@@ -136,7 +135,7 @@
         <h2 class="visually-hidden">Новости блога</h2>
           <h3 class="news-blog">Новое в нашем блоге</h3>
           <a href="#">
-            <p class="news-link">10 способов сервировки фруктовых щербетов к столу</p>
+            <p class="news-link">10 способов сервировки<br> фруктовых щербетов к<br> столу</p>
           </a>
       </section>
       <section class="subscription">
@@ -149,23 +148,24 @@
       </div>
       </section>
     </div>
-      <section class="location">
-        <h2 class="visually-hidden">Карта проезда и карта</h2>
-        <img src="img/map.jpg" width="1250" height="430" alt="Карта проезда">
-        <address class="contacts">
-          <div class="address">
-            <p>Адрес главного офиса и онлайн магазина:<br>
-            <b>ул. Большая Конюшенная 19/8, Санкт - Петербург</b><br>
-            Для заказов по телефону:<br>
-            <b>8 812 450-25-25</b><br>
-            (с 10 до 20 ежедневно)</p>
-          </div>
-          <a class="button feedback" href="#">Форма обратной связи</a>
-        </address>
-      </section>
+    </div>
+    <section class="location">
+      <h2 class="visually-hidden">Карта проезда и карта</h2>
+      <img class="map" src="img/map.jpg" alt="Карта проезда">
+      <address class="contacts">
+        <div class="address">
+          <p>Адрес главного офиса и онлайн магазина:<br>
+          <b>ул. Большая Конюшенная 19/8, Санкт - Петербург</b><br>
+          Для заказов по телефону:<br>
+          <b>8 812 450-25-25</b><br>
+          (с 10 до 20 ежедневно)</p>
+        </div>
+        <a class="button feedback" href="#">Форма обратной связи</a>
+      </address>
+    </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-container">
+      <div class="container">
       <div class="footer-social">
         <ul class="social">
           <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
