@@ -11,30 +11,75 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html">
-            <img src="svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина мороженного 'Gllacy'">
-          </a>
-          <ul class="site-navigation">
-            <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-            <li><a href="payment.html">Доставка и оплата</a></li>
-            <li><a href="about-us.html">О компании</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li><a class="search" href="#"></a></li>
-            <li><a class="login-link" href="#">Вход</a></li>
-            <li><a class="basket" href="#">2 товара</a></li>
-          </ul>
+          <div class="site-navigation-container">
+                <img src="svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина мороженного 'Gllacy'">
+              <ul class="site-navigation">
+                <li class="site-navigation-item site-navigation-current"><a href="catalog.html">Каталог</a>
+                  <ul class="item-list">
+                    <li class="item-new"><a><b>Новинки</a></b></li>
+                    <li class="item-creamy"><a class="link-creamy" href="#">Сливочное</a></li>
+                    <li class="item-sherbet"><a class="link-sherbet" href="#">Щербеты</a></li>
+                    <li class="item-frutice"><a class="link-frutice" href="#">Фруктовый лед</a></li>
+                  </ul>
+                </li>
+                <li class="site-navigation-item"><a href="payment.html">Доставка и оплата</a></li>
+                <li class="site-navigation-item"><a href="about-us.html">О компании</a></li>
+              </ul>
+          </div>
+
+          <div class="user-navigation-container">
+            <ul class="user-navigation">
+              <li class="search-nav-item"><a class="search"href="#"></a>
+                <form class="site-search" method="get" action="submit" id="site-search">
+                  <div class="site-search-field">
+                    <input class="site-search-input" type="text" id="search" name="search" required>
+                    <label class="site-search-label field-label" for="search">Что ищем?</label>
+                  </div>
+                </form>
+              </li>
+              <li class="login-nav-item  user-nav__item--enter">
+                <a class="login-link user-enter-link" href="login.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+                  Вход
+                </a>
+                <form class="site-enter" method="post" action="submit" id="site-enter">
+                  <div class="site-enter-field">
+                    <input class="site-enter-input" type="text" id="user-email" name="email" required>
+                    <label class="site-enter-label  field-label" for="user-email">Электронная почта</label>
+                  </div>
+                  <div class="site-enter-row">
+                    <input class="site-enter-input" type="password" id="password" name="password" required>
+                    <label class="site-enter-label  field-label" for="password">Пароль</label>
+                  </div>
+                  <div class="site-enter-submit">
+                    <button class="button" type="submit" name="enter">Войти</button>
+                    <ul class="site-enter-links">
+                      <li class="">
+                        <a class="site-enter-link" href="#">Забыли пароль?</a>
+                      </li>
+                      <li class="">
+                        <a class="site-enter-link" href="#">Новая регистрация</a>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </li>
+              <li class="basket site-navigation-item"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
+                <a>2 товара</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div class="opening-hours"><span class="time">С 10 до 20, ежедневно</span> <span class="phone">8 812 450-25-25</span></div>
       </div>
     </header>
     <main class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="index.html">Главная  » </a></li>
+        <li><a href="catalog.html">Каталог  » </a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
-      <h1 class="page-title">Сливочное мороженное</h1>
+      <h1 class="page-title">Сливочное мороженое</h1>
 
     <section class="filters">
 
@@ -42,8 +87,8 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
           <fieldset class="sort">
-            <legend for="sort">Сортировка:</legend>
-              <select id="sort" name="sorting">
+            <legend class="sort-item" for="sort">Сортировка:</legend>
+              <select class="sort-item-select"id="sort" name="sorting">
                 <option value="popular">
                   по популярности
                 </option>
@@ -151,7 +196,7 @@
   </section>
 
     <section class="catalog">
-      <h2 class="visually-hidden">Перечень видов мороженного</h2>
+      <h2 class="visually-hidden">Перечень видов мороженого</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <p class="catalog-item-image">
@@ -257,6 +302,7 @@
             <li><a class="pagination-item" href="#">2</a></li>
             <li><a class="pagination-item" href="#">3</a></li>
             <li><a class="pagination-item" href="#">4</a></li>
+            <li><a class="pagination-item" href="#">5</a></li>
             <button class="pagination-icon"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 8 12"><path fill="#ffffff" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
             </button>
         </ul>
@@ -280,25 +326,25 @@
         </a></li>
       </ul>
     </div>
-    <div class="footer-nav">
-      <ul class="footer-nav-item">
-        <li>
-          <a class="provider" href="#">
-            <img src="svg-gllacy/heart.svg" width="15" height="13" alt="Сердце">Для поставщиков
-          </a>
-        </li>
-        <li><a class="production" href="#">О производстве</a></li>
-        <li><a class="documents" href="#">Документы</a></li>
-        <li><a class="ecology" href="#">Экологические стандарты</a></li>
-      </ul>
-    </div>
-    <p class="footer-copyright">
-      <img class="footer-logo" src="svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
-      <b>Сделано в</b>
-      <a class="copyright" href="https://htmlacademy.ru">HTML Academy</a>
-      &copy 2016
-    </p>
-    </div>
-  </footer>
-  </body>
-</html>
+          <div class="footer-nav">
+            <ul class="footer-nav-item">
+              <li class="footer-nav-link">
+                <img src="svg-gllacy/heart.svg" width="15" height="13" alt="Сердце"><a class="provider" href="#">
+                  Для поставщиков
+                </a>
+              </li>
+              <li class="footer-nav-link documents"><a class="" href="#">Наши документы</a></li>
+              <li class="footer-nav-link production"><a class="" href="#">О производстве</a></li>
+              <li class="footer-nav-link ecology"><a class="" href="#">Экологические стандарты</a></li>
+            </ul>
+          </div>
+          <div class="footer-copyright">
+            <img class="footer-logo" src="svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
+            <p>
+            Сделано в<a class="copyright" href="https://htmlacademy.ru">HTML Academy</a>
+            &copy 2017
+          </p>
+        </div>
+      </footer>
+    </body>
+  </html>
